@@ -24,9 +24,11 @@
     state: present
   become: yes
 
-- name: Update apt and install docker-ce
+- name: Install docker-ce and docker-compose-plugin
   apt:
-    name: docker-ce
+    name:
+      - docker-ce
+      - docker-compose-plugin
     state: latest
     update_cache: true
   become: yes
