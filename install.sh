@@ -1,21 +1,12 @@
 #!/bin/bash
+set -e
 
-# Ensure dotfiles were installed in home directory.
-dir=~/dotfiles
-if [ ! -d "$dir" ]; then
-  echo -e  "❌ Directory $dir not found, .dotfiles should be cloned in home directory."
-  exit 1
+if ! [ -x "$(command -v ansible)" ]; then
+  sudo apt install ansible
 fi
 
-# Create work folder.
-mkdir -p ~/work
+ansible-playbook -i ./hosts ./playbook.yml --ask-become-pass
 
-# Run the install scripts.
-for script in .scripts/*; do
-  chmod +x $script && sh $script
-done
-
-# Configure dotfiles.
-for dotfile in *(/); do
-  stow -v -t ~/ -S $dotfile
-done
+if command -v notify-send 1>/dev/null 2>&1; then
+  notify-send "dotfiles: install complete" "Successfully set up dev environment."
+fi

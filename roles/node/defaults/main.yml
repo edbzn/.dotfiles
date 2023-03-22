@@ -1,0 +1,6 @@
+npm_global_packages:
+  - nx
+  - '@angular/cli'
+  - http-server
+  - n
+  - diff-so-fancy

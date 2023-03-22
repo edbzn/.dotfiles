@@ -1,7 +1,7 @@
 [user]
   name = Edouard Bozon
   email = bozonedouard@gmail.com
-  # signingkey =
+  #signingkey = 
 
 [commit]
   gpgsign = true

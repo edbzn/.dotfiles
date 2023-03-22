@@ -1,0 +1,24 @@
+- name: Bootstrap local development environment
+  hosts: local
+
+  # Tag each role so that we can select individual roles to run
+  # with ansible-playbook --tags
+  roles:
+    - role: various
+      tags: [various]
+
+    - role: yarn
+      tags: [yarn]
+
+    - role: docker
+      tags: [docker]
+
+    - role: dotfiles
+      tags: [dotfiles]
+
+    - role: node
+      tags: [node]
+
+    - role: chrome
+      tags: [chrome]
+

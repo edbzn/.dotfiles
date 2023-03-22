@@ -1,0 +1,10 @@
+- name: Install various tools
+  apt: 
+    name: 
+      - git
+      - terminator 
+      - curl
+      - htop 
+      - vim 
+      - flameshot
+    state: present

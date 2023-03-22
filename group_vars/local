@@ -1,0 +1,8 @@
+dotfiles_user_home: "{{ '~' | expanduser }}"
+dotfiles_home: "{{dotfiles_user_home}}/dotfiles"
+
+# Name used in commit messages
+git_full_name: Edouard Bozon
+git_user: edbzn
+git_email: bozonedouard@gmail.com
+git_gpg_key: "{{ lookup('env','GIT_GPG_KEY_ID') }}"
