@@ -1,10 +1,12 @@
 - name: Install various tools
-  apt: 
-    name: 
+  apt:
+    name:
       - git
-      - terminator 
+      - terminator
       - curl
-      - htop 
-      - vim 
+      - htop
+      - vim
       - flameshot
+    update_cache: yes
     state: present
+  become: yes
