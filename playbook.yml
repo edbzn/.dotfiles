@@ -6,13 +6,16 @@
   roles:
     - role: various
       tags: [various]
-   
+
+    - role: docker
+      tags: [docker]
+
     - role: dotfiles
       tags: [dotfiles]
-    
+
     - role: node
       tags: [node]
 
     - role: chrome
       tags: [chrome]
-        
+
