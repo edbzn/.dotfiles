@@ -36,11 +36,11 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 - **Shell** : Zsh + [Oh My Zsh](https://ohmyz.sh/)
 - **Terminal** : Terminator
 - **Runtime** : Node.js + Yarn + NPM + [n](https://github.com/tj/n)
-- **Node Packages** : Nx + @angular/cli + http-server
+- **Global Packages** : Nx + @angular/cli + http-server
 - **Containers** : Docker CE + Docker Compose
 - **Versioning** : Git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 - **Editors** : Visual Studio Code (TODO) + Vim
 - **Browser** : Google Chrome
 - **Collaboration** : Slack (TODO)
-- **Fonts** : [Fira Code fonts](https://github.com/tonsky/FiraCode) (TODO)
-- **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/)
+- **Fonts** : Droid Sans Mono + MesloLGS NF (TODO)
+- **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/) + Spotify (TODO)
