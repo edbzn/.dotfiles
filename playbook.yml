@@ -4,8 +4,8 @@
   # Tag each role so that we can select individual roles to run
   # with ansible-playbook --tags
   roles:
-    - role: various
-      tags: [various]
+    - role: bootstrap
+      tags: [bootstrap]
 
     - role: zsh
       tags: [zsh]

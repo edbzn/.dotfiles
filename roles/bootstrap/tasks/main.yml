@@ -1,4 +1,4 @@
-- name: Install various tools
+- name: Install various required tools
   apt:
     name:
       - git
