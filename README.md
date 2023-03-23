@@ -38,6 +38,7 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 - **Runtime** : Node.js + Yarn + NPM + [n](https://github.com/tj/n)
 - **Global Packages** : Nx + @angular/cli + http-server
 - **Containers** : Docker CE + Docker Compose
+- **API** : Insomnia
 - **Versioning** : Git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 - **Editors** : Visual Studio Code (TODO) + Vim
 - **Browser** : Google Chrome

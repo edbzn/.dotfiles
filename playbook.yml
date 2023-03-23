@@ -13,6 +13,9 @@
     - role: dotfiles
       tags: [dotfiles]
 
+    - role: insomnia
+      tags: [insomnia]
+
     - role: yarn
       tags: [yarn]
 
