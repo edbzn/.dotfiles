@@ -1,0 +1,42 @@
+- name: Install Zsh
+  apt:
+    name:
+      - zsh
+      - zsh-syntax-highlighting
+    update_cache: yes
+  become: yes
+
+- name: Create ~/.zsh directory
+  become: no
+  file:
+    path: "~/.zsh"
+    state: directory
+    mode: 0755
+
+- name: Install zsh-autosuggestions
+  become: no
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions.git
+    dest: ~/.zsh
+    force: yes
+    version: master
+
+- name: Check oh-my-zsh installed
+  stat:
+    path: ~/.oh-my-zsh
+  register: ohmyzsh
+
+- name: Install oh-my-zsh
+  become: no
+  shell:
+    cmd: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  when: not ohmyzsh.stat.exists
+
+- name: Install zsh powerlevel10k theme
+  become: no
+  git:
+    repo: https://github.com/romkatv/powerlevel10k.git
+    dest: ~/.oh-my-zsh/custom/themes/powerlevel10k
+    force: yes
+    version: master
+

@@ -7,14 +7,17 @@
     - role: various
       tags: [various]
 
+    - role: zsh
+      tags: [zsh]
+
+    - role: dotfiles
+      tags: [dotfiles]
+
     - role: yarn
       tags: [yarn]
 
     - role: docker
       tags: [docker]
-
-    - role: dotfiles
-      tags: [dotfiles]
 
     - role: node
       tags: [node]

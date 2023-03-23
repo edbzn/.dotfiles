@@ -1,24 +1,17 @@
 export ZSH=/home/edouard/.oh-my-zsh
 
-ZSH_THEME="bureau"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 UPDATE_ZSH_DAYS=7
 
 plugins=(
   git
-  pyenv
   docker-compose
   node
-  yarn
-  yarn-completion
   npm
   nx-completion
   systemd
-  web-search
-  gatsby
-  vscode
   sudo
   ssh-agent
-  heroku
 )
 
 # Preferred editor for local and remote sessions
