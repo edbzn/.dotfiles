@@ -1,6 +1,6 @@
 - name: Install Node.js
-  apt: 
-    name: 
+  apt:
+    name:
       - nodejs
       - npm
     state: present
@@ -12,8 +12,15 @@
     version: "{{ item.version | default('latest') }}"
     global: true
     state: latest
-  with_items: "{{ npm_global_packages }}"
+  with_items:
+    - nx
+    - '@angular/cli'
+    - http-server
+    - n
+    - diff-so-fancy
+  tags: [npm-global]
 
 - name: Switch to latest Node.js LTS version
   become: true
   command: n lts
+  tags: [switch-to-node-lts]
