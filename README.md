@@ -17,16 +17,18 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 ~/dotfiles/install.sh
 ```
 
-3. Update tools, note that tags are optional, if not passed it will update everything.
+## Update
 
-```sh
-./update.sh docker node dotfiles chrome
-```
-
-4. List available tags.
+1. List available tags.
 
 ```sh
 ./tags.sh
+```
+
+2. Update tools, note that tags are optional, if not passed it will update everything.
+
+```sh
+./update.sh docker node dotfiles chrome
 ```
 
 ## Tools
