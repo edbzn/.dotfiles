@@ -1,6 +1,6 @@
 <img src="./.assets/dotfiles-logo.png" width="300" alt="dotfiles">
 
-This repository provides my ready-to-use dev environment using [Ansible](https://www.ansible.com
+This repository provides my ready-to-use dev environment in seconds using [Ansible](https://www.ansible.com
 ) and [GNU Stow](https://www.gnu.org/software/stow/).
 
 ## Setup
@@ -17,10 +17,16 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 ~/dotfiles/install.sh
 ```
 
-3. Update tools, note that arguments are optional.
+3. Update tools, note that tags are optional, if not passed it will update everything.
 
 ```sh
 ./update.sh docker node dotfiles chrome
+```
+
+4. List available tags.
+
+```sh
+./tags.sh
 ```
 
 ## Tools
