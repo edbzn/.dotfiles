@@ -17,6 +17,7 @@ plugins=(
   npm
   nx-completion
   zsh-autosuggestions
+  zsh-syntax-highlighting
   systemd
   sudo
   ssh-agent

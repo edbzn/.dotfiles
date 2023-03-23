@@ -2,7 +2,6 @@
   apt:
     name:
       - zsh
-      - zsh-syntax-highlighting
     update_cache: yes
   become: yes
 
@@ -13,11 +12,19 @@
     state: directory
     mode: 0755
 
+- name: Install zsh-highlighting
+  become: no
+  git:
+    repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+    force: yes
+    version: master
+
 - name: Install zsh-autosuggestions
   become: no
   git:
     repo: https://github.com/zsh-users/zsh-autosuggestions.git
-    dest: ~/.zsh
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
     force: yes
     version: master
 
