@@ -8,16 +8,7 @@
       tags: [bootstrap]
 
     - role: zsh
-      tags: [zsh]
-
-    - role: dotfiles
-      tags: [dotfiles]
-
-    - role: insomnia
-      tags: [insomnia]
-
-    - role: yarn
-      tags: [yarn]
+      tags: [zsh, bootstrap]
 
     - role: docker
       tags: [docker]
@@ -25,6 +16,17 @@
     - role: node
       tags: [node]
 
-    - role: chrome
-      tags: [chrome]
+    - role: yarn
+      tags: [yarn, node]
 
+    - role: chrome
+      tags: [chrome, app, bootstrap]
+
+    - role: vscode
+      tags: [vscode, app, bootstrap]
+
+    - role: insomnia
+      tags: [insomnia, app, bootstrap]
+
+    - role: dotfiles
+      tags: [dotfiles]

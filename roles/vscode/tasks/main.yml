@@ -1,0 +1,26 @@
+- name: Add VSCode GPG apt key
+  apt_key:
+    url: https://packages.microsoft.com/keys/microsoft.asc
+    state: present
+  become: yes
+
+- name: Add VSCode repository
+  apt_repository:
+    repo: deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
+    state: present
+  become: yes
+
+- name: Install VSCode
+  apt:
+    name:
+      - code
+    state: latest
+    update_cache: true
+  become: yes
+
+- name: 'Set default editor'
+  shell: |
+    xdg-mime default code.desktop text/plain
+  changed_when: false
+  become: false
+

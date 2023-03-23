@@ -40,7 +40,7 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 - **Containers** : Docker CE + Docker Compose
 - **API** : Insomnia
 - **Versioning** : Git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
-- **Editors** : Visual Studio Code (TODO) + Vim
+- **Editors** : Visual Studio Code + Vim
 - **Browser** : Google Chrome
 - **Collaboration** : Slack (TODO)
 - **Fonts** : Droid Sans Mono + MesloLGS NF (TODO)
