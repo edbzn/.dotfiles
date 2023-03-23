@@ -10,3 +10,9 @@
     update_cache: yes
     state: present
   become: yes
+
+- name: Create work directory
+  file:
+    path: ~/work
+    state: directory
+    mode: '0755'
