@@ -13,5 +13,5 @@ else
 fi
 
 if command -v notify-send 1>/dev/null 2>&1; then
-  notify-send "dotfiles: update complete" "Successfully updated dev environment."
+  notify-send -i face-smile "Dotfiles update complete" "Successfully updated dev environment."
 fi
