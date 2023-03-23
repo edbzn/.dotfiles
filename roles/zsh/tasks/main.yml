@@ -40,3 +40,13 @@
     force: yes
     version: master
 
+- name: Install nx-completion
+  become: no
+  git:
+    repo: https://github.com/edbzn/dotfiles.git
+    dest: ~/.oh-my-zsh/custom/plugins/nx-completion
+    force: yes
+    version: main
+  tags: [nx-completion]
+
+
