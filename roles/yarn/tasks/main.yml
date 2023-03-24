@@ -5,7 +5,7 @@
 
 - name: Add Yarn repository
   apt_repository:
-    repo: "deb https://dl.yarnpkg.com/debian/ stable main"
+    repo: deb https://dl.yarnpkg.com/debian/ stable main
     filename: yarn
   become: yes
 
@@ -13,4 +13,5 @@
   apt:
     name: yarn
     update_cache: yes
+    state: latest
   become: yes

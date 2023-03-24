@@ -44,4 +44,4 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 - **Browser** : Google Chrome
 - **Collaboration** : Slack (TODO)
 - **Fonts** : Droid Sans Mono + MesloLGS NF (TODO)
-- **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/) + Spotify (TODO)
+- **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/) + Spotify
