@@ -42,7 +42,7 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 - **Versioning** : Git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 - **Editors** : Visual Studio Code + Vim
 - **Browser** : Google Chrome
-- **Collaboration** : Slack (TODO)
+- **Collaboration** : Slack
 - **Fonts** : Droid Sans Mono + MesloLGS NF (TODO)
 - **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/) + Spotify
 - **Vault** : Authy

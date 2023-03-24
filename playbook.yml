@@ -1,8 +1,5 @@
 - name: Bootstrap local development environment
   hosts: local
-
-  # Tag each role so that we can select individual roles to run
-  # with ansible-playbook --tags
   roles:
     - role: bootstrap
       tags: [bootstrap]

@@ -1,4 +1,4 @@
 - name: Install Spotify via snap
-  community.general.snap:
+  snap:
     name: spotify
-    state: latest
+    state: present

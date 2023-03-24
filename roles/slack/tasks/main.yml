@@ -1,4 +1,4 @@
 - name: Install Slack via snap
-  community.general.snap:
+  snap:
     name: slack
-    state: latest
+    state: present

@@ -9,7 +9,7 @@ else
   echo "Updating local dev environment... (--tags $@)"
   # format args for ansible from tagA tagB tagC to "tagA,tagB,tagC"
   tags=$(echo $@ | sed 's/ /,/g')
-  ansible-playbook -i ./hosts ./playbook.yml --tags "$tags" --skip-tags "bootstrap" --ask-become-pass
+  ansible-playbook -i ./hosts ./playbook.yml --tags "$tags" --ask-become-pass
 fi
 
 if command -v notify-send 1>/dev/null 2>&1; then
