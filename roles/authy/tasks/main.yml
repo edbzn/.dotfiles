@@ -1,0 +1,4 @@
+- name: Install Authy via snap
+  community.general.snap:
+    name: authy
+    state: latest

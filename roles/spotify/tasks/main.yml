@@ -1,25 +1,4 @@
-- name: snapd present
-    ansible.builtin.yum:
-      name:
-        - snapd
-        - fuse
-        - squashfs-tools
-        - squashfuse
-        - kernel-modules
-      state: present
-
-- name: Symlink /snap
-  ansible.builtin.file:
-    src: "/var/lib/snapd/snap"
-    dest: "/snap"
-    state: link
-
-- name: Load squashfs module
-  community.general.modprobe:
-    name: "squashfs"
-    state: present
-
 - name: Install Spotify via snap
   community.general.snap:
     name: spotify
-    state: present
+    state: latest

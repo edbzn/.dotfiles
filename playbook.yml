@@ -31,5 +31,11 @@
     - role: spotify
       tags: [spotify, app, bootstrap]
 
+    - role: authy
+      tags: [authy, app, bootstrap]
+
+    - role: slack
+      tags: [slack, app, bootstrap]
+
     - role: dotfiles
       tags: [dotfiles]

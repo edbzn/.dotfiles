@@ -45,3 +45,4 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 - **Collaboration** : Slack (TODO)
 - **Fonts** : Droid Sans Mono + MesloLGS NF (TODO)
 - **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/) + Spotify
+- **Vault** : Authy
