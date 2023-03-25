@@ -34,5 +34,8 @@
     - role: slack
       tags: [slack, app, bootstrap]
 
+    - role: fonts
+      tags: [fonts, bootstrap]
+
     - role: dotfiles
       tags: [dotfiles]

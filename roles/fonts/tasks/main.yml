@@ -1,0 +1,21 @@
+- name: Create fonts directory
+  become: no
+  file:
+    path: "~/.local/share/fonts"
+    state: directory
+    mode: 0755
+
+- name: Install fonts
+  become: no
+  copy:
+    remote_src: yes
+    src: "{{ item }}"
+    dest: "~/.local/share/fonts"
+  with_fileglob:
+    - "~/dotfiles/.assets/fonts/*"
+
+- name: Clear fonts cache
+  become: no
+  shell: |
+    fc-cache -f -v
+

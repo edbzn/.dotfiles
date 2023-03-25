@@ -43,6 +43,6 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 - **Editors** : Visual Studio Code + Vim
 - **Browser** : Google Chrome
 - **Collaboration** : Slack
-- **Fonts** : Droid Sans Mono + MesloLGS NF (TODO)
+- **Programming Font** : [JetBrains Mono](https://www.jetbrains.com/fr-fr/lp/mono/)
 - **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/) + Spotify
 - **Vault** : Authy
