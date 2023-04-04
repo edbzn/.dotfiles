@@ -33,12 +33,12 @@
     update_cache: true
   become: yes
 
-- name: Ensure Docker service is enabled and started.
-  service:
-    name: docker
-    state: started
-    enabled: yes
+#- name: Ensure Docker service is enabled and started.
+#  service:
+#    name: docker
+#    state: started
+#    enabled: yes
 
-- name: Ensure Docker users are in the Docker group.
-  user:
-    name
+#- name: Ensure Docker users are in the Docker group.
+#  user:
+#    name
