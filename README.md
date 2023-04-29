@@ -22,13 +22,13 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 1. List available tags.
 
 ```sh
-./tags.sh
+~/dotfiles/tags.sh
 ```
 
 2. Update tools, note that tags are optional, if not passed it will update everything.
 
 ```sh
-./update.sh docker node dotfiles chrome
+~/dotfiles/update.sh docker node dotfiles chrome
 ```
 
 ## Tools
