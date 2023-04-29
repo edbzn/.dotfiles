@@ -1,4 +1,4 @@
-- name: Install various required tools
+- name: Install various tools using apt
   apt:
     name:
       - git
@@ -11,6 +11,12 @@
     update_cache: yes
     state: present
   become: yes
+  
+- name: Install various tools using snap
+  snap:
+    name: 
+      - emote
+    state: present
 
 - name: Create work directory
   file:
