@@ -436,7 +436,7 @@
     # *42 if have stashes.
     (( VCS_STATUS_STASHES        )) && res+=" ${clean}🔘 ${VCS_STATUS_STASHES}"
     # 'merge' if the repo is in an unusual state.
-    [[ -n $VCS_STATUS_ACTION     ]] && res+=" ${conflicted}🟠 {VCS_STATUS_ACTION}"
+    [[ -n $VCS_STATUS_ACTION     ]] && res+=" ${conflicted}🟠 ${VCS_STATUS_ACTION}"
     # ~42 if have merge conflicts.
     (( VCS_STATUS_NUM_CONFLICTED )) && res+=" ${conflicted}🔴 ${VCS_STATUS_NUM_CONFLICTED}"
     # +42 if have staged changes.
