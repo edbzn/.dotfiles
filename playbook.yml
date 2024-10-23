@@ -13,9 +13,6 @@
     - role: node
       tags: [node]
 
-    - role: yarn
-      tags: [yarn, node]
-
     - role: chrome
       tags: [chrome, app, bootstrap]
 
