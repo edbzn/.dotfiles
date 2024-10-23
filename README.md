@@ -35,7 +35,7 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 
 - **Shell** : Zsh + [Oh My Zsh](https://ohmyz.sh/)
 - **Terminal** : Terminator
-- **Runtime** : Node.js + Yarn + NPM + [n](https://github.com/tj/n)
+- **Runtime** : Node.js + NPM + Corepack + [n](https://github.com/tj/n)
 - **Global Packages** : Nx + @angular/cli + http-server
 - **Containers** : Docker CE + Docker Compose
 - **API** : Insomnia
