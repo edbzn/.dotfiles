@@ -50,7 +50,7 @@
 - name: Install nx-completion
   become: no
   git:
-    repo: https://github.com/edbzn/dotfiles.git
+    repo: https://github.com/jscutlery/nx-completion.git
     dest: ~/.oh-my-zsh/custom/plugins/nx-completion
     force: yes
     version: main
