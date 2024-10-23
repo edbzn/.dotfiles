@@ -19,9 +19,6 @@
     - role: vscode
       tags: [vscode, app, bootstrap]
 
-    - role: insomnia
-      tags: [insomnia, app, bootstrap]
-
     - role: spotify
       tags: [spotify, app, bootstrap]
 
