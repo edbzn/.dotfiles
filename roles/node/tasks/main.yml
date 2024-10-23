@@ -4,6 +4,7 @@
       - nodejs
       - npm
     state: present
+  become: yes
 
 - name: Install npm global packages
   become: true
