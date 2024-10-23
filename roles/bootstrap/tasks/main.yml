@@ -8,10 +8,11 @@
       - vim
       - flameshot
       - jq
+      - gnome-tweaks
     update_cache: yes
     state: present
   become: yes
-  
+
 - name: Create work directory
   file:
     path: ~/work

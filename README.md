@@ -38,11 +38,9 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 - **Runtime** : Node.js + NPM + Corepack + [n](https://github.com/tj/n)
 - **Global Packages** : Nx + @angular/cli + http-server
 - **Containers** : Docker CE + Docker Compose
-- **API** : Insomnia
 - **Versioning** : Git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 - **Editors** : Visual Studio Code + Vim
 - **Browser** : Google Chrome
 - **Collaboration** : Slack
 - **Programming Font** : [JetBrains Mono](https://www.jetbrains.com/fr-fr/lp/mono/)
-- **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/) + Spotify
-- **Vault** : Authy
+- **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/)

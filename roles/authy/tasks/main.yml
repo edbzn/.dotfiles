@@ -1,4 +1,0 @@
-- name: Install Authy via snap
-  snap:
-    name: authy
-    state: present
