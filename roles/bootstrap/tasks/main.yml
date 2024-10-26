@@ -9,6 +9,7 @@
       - flameshot
       - jq
       - gnome-tweaks
+      - gh
     update_cache: yes
     state: present
   become: yes
