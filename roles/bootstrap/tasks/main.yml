@@ -10,6 +10,7 @@
       - jq
       - gnome-tweaks
       - gh
+      - lsd
     update_cache: yes
     state: present
   become: yes
