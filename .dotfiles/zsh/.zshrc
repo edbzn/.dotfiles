@@ -30,24 +30,25 @@ else
   export EDITOR='vim'
 fi
 
-alias zshrc="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias work="cd ~/work"
-alias nx-check="nx affected --target=lint,test,build --parallel=8"
-
 source $ZSH/oh-my-zsh.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Load Rust environment.
+[ -f ~/.cargo/env ] && source ~/.cargo/env
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
 # bun completions
-[ -s "/home/edouard/.bun/_bun" ] && source "/home/edouard/.bun/_bun"
+[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 alias ls="lsd"
+alias zshrc="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias work="cd ~/work"
+alias nx-check="nx affected --target=lint,test,build --parallel=8"

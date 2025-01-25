@@ -14,16 +14,19 @@
       tags: [node]
 
     - role: chrome
-      tags: [chrome, app, bootstrap]
+      tags: [chrome, bootstrap]
 
     - role: vscode
-      tags: [vscode, app, bootstrap]
+      tags: [vscode, bootstrap]
 
     - role: slack
-      tags: [slack, app, bootstrap]
+      tags: [slack, bootstrap]
 
     - role: fonts
       tags: [fonts, bootstrap]
 
     - role: dotfiles
       tags: [dotfiles]
+
+    - role: rust
+      tags: [rust, bootstrap]
