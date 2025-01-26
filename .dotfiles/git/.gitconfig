@@ -1,11 +1,11 @@
 [user]
   name = Edouard Bozon
   email = bozonedouard@gmail.com
-  #signingkey = 
+  #signingkey =
 
 [commit]
   gpgsign = true
-  
+
 [push]
   # No more git push --set-upstream origin test && git push
   autoSetupRemote = true
@@ -86,18 +86,21 @@
 [color]
   ui = always
 [color "branch"]
-  current = green bold
-  local = green
-  remote = yellow
+  current = "green bold"
+  local = "green"
+  remote = "yellow"
 
 [color "diff"]
-  frag = magenta
-  meta = yellow
-  new = green
-  old = red
+  meta = "11"
+  frag = "magenta bold"
+  func = "146 bold"
+  commit = "yellow bold"
+  old = "red bold"
+  new = "green bold"
+  whitespace = "red reverse"
 
 [color "diff-highlight"]
-  oldNormal = red bold
+  oldNormal = "red bold"
   oldHighlight = "red bold 52"
   newNormal = "green bold"
   newHighlight = "green bold 22"
@@ -111,7 +114,7 @@
   tool = opendiff
 
 [core]
-  editor = vim 
+  editor = vim
   abbrev = 12
   attributesfile = ~/.gitattributes
   excludesfile = ~/.gitignore
@@ -121,8 +124,11 @@
 
 [pager]
   # Insanely beautiful diffs ==> npm install -g diff-so-fancy
-  diff = diff-so-fancy | less --tabs=2 -RFX
-  show = diff-so-fancy | less --tabs=2 -RFX
+  diff = diff-so-fancy | less --tabs=2 -RF
+  show = diff-so-fancy | less --tabs=2 -RF
+
+[interactive]
+	diffFilter = diff-so-fancy --patch
 
 [diff "bin"]
   # Use `hexdump` to diff binary files
@@ -144,3 +150,4 @@
   clean = git lfs clean %f
   smudge = git lfs smudge %f
   required = true
+
