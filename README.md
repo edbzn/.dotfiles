@@ -33,14 +33,15 @@ git clone git@github.com:edbzn/dotfiles.git ~/dotfiles
 
 ## Tools
 
-- **Shell** : Zsh + [Oh My Zsh](https://ohmyz.sh/)
+- **Shell** : Zsh + [Oh My Zsh](https://ohmyz.sh/) + Powerlevel10k
 - **Terminal** : Terminator
-- **Runtime** : Node.js + NPM + Corepack + [n](https://github.com/tj/n)
+- **JavaScript Runtime** : Node.js + Bun + NPM + Corepack + [n](https://github.com/tj/n)
+- **Rust** : Rust + Cargo
 - **Global Packages** : Nx + @angular/cli + http-server
 - **Containers** : Docker CE + Docker Compose
 - **Versioning** : Git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 - **Editors** : Visual Studio Code + Vim
 - **Browser** : Google Chrome
 - **Collaboration** : Slack
-- **Programming Font** : [JetBrains Mono](https://www.jetbrains.com/fr-fr/lp/mono/)
-- **Various** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/)
+- **Programming Font** : [JetBrains Mono](https://www.jetbrains.com/fr-fr/lp/mono/) + [JetBrainsMono Nerd](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono)
+- **Various Tools** : cURL + htop + [GNU Stow](https://www.gnu.org/software/stow/) + [Flameshot](https://flameshot.org/) + jq + gnome-tweaks + gh + lsd

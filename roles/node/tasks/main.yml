@@ -29,3 +29,23 @@
 - name: Enable Corepack
   become: true
   command: corepack enable
+
+- name: Check Bun installed
+  shell: command -v bun
+  register: bun_exists
+  ignore_errors: yes
+  tags: [bun]
+
+- name: Install Bun
+  when: bun_exists is failed
+  get_url:
+    url: https://bun.sh/install
+    dest: /tmp/bun-install.sh
+    mode: '0755'
+    force: 'yes'
+  tags: [bun]
+
+- name: Install Bun
+  when: bun_exists is failed
+  shell: /tmp/bun-install.sh
+  tags: [bun]
