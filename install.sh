@@ -1,5 +1,8 @@
 #!/bin/bash
+
 set -e
+
+cd "$(dirname "$0")"
 
 if ! [ -x "$(command -v ansible)" ]; then
   sudo apt install ansible

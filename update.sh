@@ -2,6 +2,8 @@
 
 set -e
 
+cd "$(dirname "$0")"
+
 if [[ $# -eq 0 ]]; then
   echo "Updating local dev environment..."
   ansible-playbook -i ./hosts ./playbook.yml --skip-tags "bootstrap" --ask-become-pass
