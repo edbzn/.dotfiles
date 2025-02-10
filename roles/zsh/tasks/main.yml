@@ -56,4 +56,10 @@
     version: main
   tags: [nx-completion]
 
-
+- name: Install you-should-use plugin
+  become: no
+  git:
+    repo: https://github.com/MichaelAquilina/zsh-you-should-use.git
+    dest: ~/.oh-my-zsh/custom/plugins/you-should-use
+    force: yes
+    version: master

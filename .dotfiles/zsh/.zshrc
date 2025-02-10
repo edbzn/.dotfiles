@@ -21,6 +21,7 @@ plugins=(
   systemd
   sudo
   ssh-agent
+  you-should-use
 )
 
 # Preferred editor for local and remote sessions
