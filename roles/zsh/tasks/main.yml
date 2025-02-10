@@ -63,3 +63,11 @@
     dest: ~/.oh-my-zsh/custom/plugins/you-should-use
     force: yes
     version: master
+
+- name: Install zsh-completions
+  become: no
+  git:
+    repo: https://github.com/zsh-users/zsh-completions
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-completions
+    force: yes
+    version: master
